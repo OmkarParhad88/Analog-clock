@@ -1,43 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Indie+Flower&family=Pacifico&display=swap');
-
-*{ margin: 0;padding: 0;}
-
-body {
-    background: #0000ffb5;
-    display: flex;
-    justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-.container{
-    height: 309px;
-    width: 652px;
-    background: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 29vh;
+#clockContainer {
+  position: relative;
+  margin: auto;
+  background-image: url(clock.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vw;
+  width: 40vw;
 }
-#title{
-    font-family: 'Pacifico', cursive;
-    font-size: 19px;
-    
+#hour,
+#minute,
+#second {
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  transform-origin: bottom;
 }
-#joke{
-    font-family: 'Arvo', serif;
-    font-size: 22px;
-    width: 572px;
-    display: flex;
-    justify-content: center;
+#hour {
+  width: 1.5%;
+  height: 26%;
+  top: 24%;
+  left: 49%;
+  opacity: 0.8;
 }
-#btn{
-    font-family: 'Arvo', serif;
-    font-size:18px;
-    border-radius: 8px;
-    height: 36px;
-    width: 112px;
-    background-color: #f1ac4f;
-    color:white;
-    border:none;
+#minute {
+  width: 0.99%;
+  height: 32%;
+  top: 18%;
+  left: 49.2%;
+  opacity: 0.8;
+}
+#second {
+  width: 0.6%;
+  height: 38%;
+  top: 12%;
+  left: 49.5%;
+  opacity: 0.8;
 }
